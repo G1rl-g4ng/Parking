@@ -1,0 +1,17 @@
+@charset "UTF-8";
+.button{
+	background-color: #FFA500;
+}
+.button:active{
+	background-color: #FFA500;
+}
+.button{
+border: none;
+padding: 15px;
+color: rgb(50, 0, 54);
+background-color: rgb(177, 110, 149);
+border-radius: 15px;
+}
+.button:active{
+background-color: #FFA500;
+}
