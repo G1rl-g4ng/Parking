@@ -15,7 +15,7 @@
     <welcome-file>index.html</welcome-file>
     <welcome-file>register.jsp</welcome-file>
     <welcome-file>admin.jsp</welcome-file>
-    <welcome-file>slot.jsp</welcome-file>
+    <welcome-file>map.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
     <description></description>

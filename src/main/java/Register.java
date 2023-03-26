@@ -44,6 +44,9 @@ public class Register extends HttpServlet {
     String plateNo = request.getParameter("plateNo");
     String type = request.getParameter("type");
     
+   
+    
+   
     //database Connectivity code.........
     try {
       Class.forName("com.mysql.jdbc.Driver");
@@ -53,15 +56,17 @@ public class Register extends HttpServlet {
           stmt.executeUpdate("insert into vehicle (plateNo,type)values('"+plateNo+"','"+type+"') ");
           
           out.println("\t Reserved successfully");
-          
+         
           
     } catch (ClassNotFoundException e) {
       // TODO Auto-generated catch block
       e.printStackTrace();
     } catch (SQLException e) {
       // TODO Auto-generated catch block
+    	out.println("\t Data not inserted successfully");
       e.printStackTrace();
     }
-   
+    response.sendRedirect("map.jsp");
   }
+
 }

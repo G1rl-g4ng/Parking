@@ -28,11 +28,13 @@ ResultSet resultSet = null;
 <tr>
 
 </tr>
-<tr bgcolor="#A52A2A">
+<tr bgcolor="#F4C2C2">
 <td><b>Name</b></td>
 <td><b>Phone</b></td>
 <td><b>Date</b></td>
 <td><b>Street</b></td>
+
+
 </tr>
 <%
 try{ 
@@ -43,12 +45,14 @@ String sql ="SELECT * FROM member";
 resultSet = statement.executeQuery(sql);
 while(resultSet.next()){
 %>
-<tr bgcolor="#DEB887">
+<tr bgcolor="#FFDB58">
 
 <td><%=resultSet.getString("uname") %></td>
 <td><%=resultSet.getString("phone") %></td>
 <td><%=resultSet.getString("date") %></td>
 <td><%=resultSet.getString("street") %></td>
+
+
 </tr>
 
 <% 
